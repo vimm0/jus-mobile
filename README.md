@@ -1,4 +1,4 @@
-# NativeScript-Vue Application
+# Jus Broadcasting Application
 
 > A native application built with NativeScript-Vue
 
