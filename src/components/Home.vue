@@ -5,10 +5,10 @@
         <!--<WebView src="<div><h1>Some Yellow static HTML</h1></div>" />-->
         <!--<WebView src="~/Network.html" />-->
         <StackLayout>
-            <WebView @loadFinished="onLoadFinished" :src="src"/>
-
+            <Image src="http://jus-static-prod.s3-website-us-east-1.amazonaws.com/static/img/home-hero-bg.5fb3abf.jpeg"
+                   class="cover"/>
+            <WebView @loadFinished="onLoadFinished" :src="src" class="webview-network"/>
         </StackLayout>
-
         <!--<StackLayout>-->
         <!--<Button class="btn btn-primary" @tap="$router.push('/counter')">Counter</Button>-->
         <!--<Button class="btn btn-primary" @tap="$router.push('/hello')">Hello World</Button>-->
@@ -37,3 +37,18 @@
         }
     }
 </script>
+<style>
+    .cover {
+        /*background-image: url("~/images/background.png");*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: center;*/
+        background-size: cover;
+    }
+
+    .webview-network {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+</style>
