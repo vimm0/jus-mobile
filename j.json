@@ -1,0 +1,47 @@
+[
+  {
+    "id": 4,
+    "title": "ORLANDO",
+    "duration": "00:01:00",
+    "description": "",
+    "is_completed": true,
+    "is_featured": true,
+    "created": "4 weeks ago",
+    "pic": "https://s3.amazonaws.com/jus-backend-static-prod/media/image/test_tggnmEK.jpg",
+    "is_local": true
+  },
+  {
+    "id": 3,
+    "title": "Jus Carnival",
+    "duration": "00:00:53",
+    "description": "This summer, JUS Broadcasting is bringing the HEAT, with the Debut of JUS Carnival on September 12th at Eisenhower Park in Westbury, NY. Featuring the Best of the Best Bhangra Competition and the Best of the Best Singing Competition.  Plus Food, Fun, Rides and More!  For more information call 718.752.9290 ext 106",
+    "is_completed": true,
+    "is_featured": true,
+    "created": "4 weeks ago",
+    "pic": "http://i.ytimg.com/vi/ks2V4jWCyb8/hqdefault.jpg",
+    "is_local": false
+  },
+  {
+    "id": 2,
+    "title": "Punjabi TV USA",
+    "duration": "00:01:24",
+    "description": "Jus Broadcasting – Number one Punjabi TV in USA. It is a one of the famous channel who is providing best entertainment to the citizen of the NY, USA. This is completely family channel that you can enjoy with entire family. They telecast many shows like news gurbanies, movies, shows, songs and many more. For more information about This TV channel you can call us @ +1 718-752-9290 or visit http://www.jusbroadcasting.com/",
+    "is_completed": true,
+    "is_featured": true,
+    "created": "4 weeks ago",
+    "pic": "http://i.ytimg.com/vi/rrQp8B9be4Y/hqdefault.jpg",
+    "is_local": false
+  },
+  {
+    "id": 1,
+    "title": "Jus Carnival - Best of the Best Bhangra Competition (Punjabi)",
+    "duration": "00:00:42",
+    "description": "This summer, JUS Broadcasting is bringing the HEAT, with the Debut of JUS Carnival on September 12th at Eisenhower Park in Westbury, NY. \"BEST OF THE BEST\" Bhangra competition will be featured at this first ever event where the Top 10 teams will be selected to perform in front of over 20,000 people and aired on JUS Punjabi TV. REGISTRATION NOW OPEN. to apply, send info and questions to: Bhangra@jusbroadcasting.com or call: 718.752.9290 ext. 106. Applicants, please standby for registration forms..",
+    "is_completed": true,
+    "is_featured": true,
+    "created": "4 weeks ago",
+    "pic": "http://i.ytimg.com/vi/DJ4fp1E-Xx8/hqdefault.jpg",
+    "is_local": false
+  }
+]
+          
