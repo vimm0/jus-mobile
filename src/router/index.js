@@ -4,25 +4,31 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 import Home from '../components/Home';
-import VideoDetail from '../components/VideoDetail';
+import ExternalVideoDetail from '../components/ExternalVideoDetail';
+import LocalVideoDetail from '../components/LocalVideoDetail';
 
 const router = new VueRouter({
-  pageRouting: true,
-  routes: [
-    {
-      path: '/home',
-      component: Home,
-      meta: {
-        title: 'Home',
-      },
-    },
-    {
-      path: 'video/:videoId',
-      name: 'Video Detail',
-      component: VideoDetail
-    },
-    {path: '*', redirect: '/home'},
-  ],
+    pageRouting: true,
+    routes: [
+        {
+            path: '/home',
+            component: Home,
+            meta: {
+                title: 'Home',
+            },
+        },
+        {
+            path: 'external/:videoId',
+            name: 'External Video Detail',
+            component: ExternalVideoDetail
+        },
+        {
+            path: 'local/:videoId',
+            name: 'Local Video Detail',
+            component: LocalVideoDetail
+        },
+        {path: '*', redirect: '/home'},
+    ],
 });
 
 router.replace('/home');
