@@ -7,11 +7,11 @@
     <Image src="http://jus-static-prod.s3-website-us-east-1.amazonaws.com/static/img/home-hero-bg.5fb3abf.jpeg" class="cover"/>
        
     <StackLayout class="container">
-        <StackLayout class="card" v-for="(item, index) in results" :key="index">
-            <Image :src="item.pic" width="100" height="100" stretch="aspectFill" row="0" col="0" />
-            <Label :text="item.title" /> 
-            <Label :text="item.duration" /> 
-            <Label :text="item.created" /> 
+        <StackLayout class="card" v-for="(item, index) in results" :key="index" @tap="$router.push({ name:'Video Detail',params: {videoId: item.id} })">
+                <Image :src="item.pic" width="auto" height="100" stretch="aspectFill" row="0" col="0" />
+                <Label :text="item.title" /> 
+                <Label :text="item.duration" /> 
+                <Label :text="item.created" /> 
         </StackLayout>             
     </StackLayout>
     <DockLayout orientation="horizontal" horizontalAlignment="center" verticalAlignment="center" minHeight="100">
@@ -28,7 +28,6 @@
 </template>
 <script>
     import * as webViewModule from "tns-core-modules/ui/web-view";
-    // import Collection from './Collection'
     import axios from 'axios';
 
     export default {
@@ -60,7 +59,6 @@
         ({data}) => {
             this.results = data
             Vue.set(this.$data, 'results', data)
-            console.log(data)
         }
       )
         }

@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 import Home from '../components/Home';
+import VideoDetail from '../components/VideoDetail';
 
 const router = new VueRouter({
   pageRouting: true,
@@ -14,6 +15,11 @@ const router = new VueRouter({
       meta: {
         title: 'Home',
       },
+    },
+    {
+      path: 'video/:videoId',
+      name: 'Video Detail',
+      component: VideoDetail
     },
     {path: '*', redirect: '/home'},
   ],
